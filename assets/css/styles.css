@@ -1,0 +1,263 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #FFC60B;
+  --first-color-light: hsl(38, 100%, 78%);
+  --first-color-alt: hsl(32, 75%, 50%);
+  --second-color: white;
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: #0d0000;
+  --body-color: #222;
+  --container-color: #222;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #222;
+
+
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+/* Style the container1 */
+.container1 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+/* Style the wrapper1 */
+.wrapper1 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    margin-bottom: 5px; /* Add 5px margin at the bottom */
+}
+
+/* Style the text */
+.text {
+    margin-bottom: 20px; /* Add margin at the bottom of the text */
+    margin-left: 70px;
+    color: white;
+    width: 60%;
+    font-size: 21px;
+}
+
+.text h1 {
+    margin-bottom: 10px;
+}
+
+.text p {
+    line-height: 1.5;
+    font-family: arial sans-serif ;
+}
+
+/* Style the profile image */
+.profil {
+    max-width: 240px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add margin at the bottom of the image */
+    margin-right: 90px;
+    outline: 2px solid white;
+}
+
+
+
+/* Style the arrow image */
+.arrow {
+    width: 30px; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+    animation: fadeInOut 2s infinite;
+}
+
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    /* For large screens, move the image to the right */
+    .wrapper1 {
+        justify-content: space-between;
+        margin-bottom: 5px; /* Add 5px margin at the bottom */
+        flex-direction: row; /* Align items horizontally */
+    }
+
+    .text {
+        margin-right: 20px; /* Add margin to the right of the text */
+    }
+
+    .profil {
+        margin-bottom: 0; /* Remove margin at the bottom of the image */
+
+    }
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /* For medium screens */
+    .container1 {
+        margin-top: 8%; /* Adjust as needed */
+    }
+
+    .text {
+        margin-left: 0; /* Remove left margin of the text */
+        width: 80%; /* Adjust the width of the text */
+        font-size: 18px; /* Adjust the font size of the text */
+    }
+
+    .profil {
+        margin-right: 0; /* Remove right margin of the image */
+        margin-bottom: 10px; /* Keep margin at the bottom of the image */
+    }
+
+    .card__button {
+        margin-top: 40px; /* Adjust as needed */
+    }
+
+    .arrow {
+        margin-top: 60%; /* Adjust as needed */
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    /* For small screens */
+    .container1 {
+        margin-top: 5%; /* Adjust as needed */
+    }
+
+    .text {
+        margin-left: 0; /* Remove left margin of the text */
+        width: 90%; /* Adjust the width of the text */
+        font-size: 16px; /* Adjust the font size of the text */
+    }
+
+    .profil {
+        margin-right: 0; /* Remove right margin of the image */
+        margin-bottom: 10px; /* Keep margin at the bottom of the image */
+    }
+
+    .card__button {
+        margin-top: 30px; /* Adjust as needed */
+    }
+
+    .arrow {
+        margin-top: 50%; /* Adjust as needed */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.max-width {
+  color:white;
+  text-align: center;
+}
+
+.max-width a{
+  color: white;
+}
+
+.max-width a:hover {
+  color: #FFC60B;
+}
+
+.max-width h1{
+  margin-bottom: 60px;
+}
+
+.max-width img{
+  max-width: 50%;
+}
+
+
+
+
+.content {
+  margin-bottom: 200px;
+}
+
+
+
+
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 41vh;
+    margin: 220px auto;
+    /* background: #222; */
+}
+
+.footer h1{
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 0;
+}
+
+.footer p{
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.contact {
+   display: flex;
+   margin-top: 10px;
+   margin-left: 10%;
+}
+
+.contact img {
+   max-width: 24px;
+   margin-right: 10px;
+}
+
+
+.contact a {
+   color: white;
+}
+
+.contact p:hover {
+  color: #FFC60B;
+}
+
+
+
+
+
+
+
+hr {
+  border-top: 1px solid #ffffff;
+  background-color: #ffffff; 
+}

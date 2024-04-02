@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Saya</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>- SIEM -</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <article>
+                <h3>SIEM</h3>
+                <p>
+                    Pada peoject ini kami membuat sebuah architecture monitoring menggunakan vmware yang bertujuan untuk memantau aktivitas serangan dan melakukan automisasi analisa.
+                </p>
+                <p>
+                    Program yang kami gunakan pada project ini :
+                </p>
+                
+                <ul>
+                    <li>Wazuh</li>
+                    <li>TheHive</li>
+                    <li>Cortex</li>
+                    <li>Shuffle</li>
+                </ul>
+                
+                <br>
+                <p>
+                    Wazuh memiliki sebuah agent yang akan mengirimkan semua log server kepada wazuh server menjadi sebuah alert lalu dengan automisasi shuffle alert tersebut dikirimkan kepada thehive untuk membuat ticketing kepada cortex
+                    Cortex akan melakukan analisa apakah alert itu berbahaya atau tidak dengan cara mencocokan ip atau file yang dikirimkan oleh penyerang tersebut terdaftar dalam AbuseIP dan Virustotal.
+                </p>
+
+                <div>
+                    <iframe width="600" height="400"src="https://www.youtube.com/embed/GLsNfbsPZhI?autoplay=1" allow='autoplay'></iframe>
+                </div>
+
+                
+
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h1>My Contact</h1>
+        <div class="contact">
+           <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=aljinant@gmail.com"><img src="../../assets/img/gmail.png" alt="Gmail icon"></a>
+           <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=aljinant@gmail.com"><p>aljinant@gmail.com</p></a>
+        </div>
+        <div class="contact">
+           <a href="https://www.linkedin.com/in/thoriq-aljinan-a7ba46253/"><img src="../../assets/img/linkedin.png" alt="LinkedIn icon"></a>
+           <a href="https://www.linkedin.com/in/thoriq-aljinan-a7ba46253/"><p>Thoriq Aljinan</p></a>
+        </div>
+        <div class="contact">
+           <a href="https://api.whatsapp.com/send?phone=627773658189text=saya%20ingin%20order"><img src="../../assets/img/phone.png" alt="LinkedIn icon"></a>
+           <a href="https://api.whatsapp.com/send?phone=627773658189text=saya%20ingin%20order"><p>+62 877 7365 8189</p></a>
+        </div>
+     </footer>
+
+</body>
+</html>
